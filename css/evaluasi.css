@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    height: auto;
+    box-shadow: 10px 5px 5px 10px #888;
+    background-color: #ebcda4;
+    margin-top: 90px;
+    padding: 15px;
+    text-align: center;
+}
+
+.container1 p {
+    margin-top: 20px;
+}
+
+.container1 img {
+    margin-top: 20px;
+}
+
+.container1 p a {
+    background-color: rgb(230, 154, 14);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.container1 p a:hover {
+    background-color: #02df02;
+    color: #fff;
+}
+
+.continer {
+    width: 100%;
+    margin: 20px;
+}
+.continer-navbar img {
+    margin-left: 5px;
+    width: 4%;
+}
+.continer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ae8d5e;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: #ae8d5e;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.continer-navbar {
+    background-color: #774d0e;
+    padding: 15px 20px; /* Mengubah padding untuk responsivitas */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.continer-navbar .judul {
+    color: white;
+    margin-right: auto; /* Mengatur margin kanan agar tetap responsif */
+}
+
+header ul li a:hover {
+    color: #ae8d5e;
+}
+
+.continer-navbar ul {
+    display: flex;
+    gap: 20px; /* Mengurangi jarak antar elemen menu untuk responsivitas */
+}
+
+.continer-navbar ul li {
+    list-style: none;
+}
+
+.continer-navbar ul li a {
+    margin-right: 27px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.continer-navbar h1 {
+    color: white;
+}
+
+/* Untuk layar dengan lebar maksimum 768px */
+@media only screen and (max-width: 768px) {
+    .banner {
+        height: 70vh; /* Mengubah tinggi banner untuk responsivitas */
+    }
+
+    .banner h2 {
+        font-size: 18px; /* Mengubah ukuran font judul untuk layar berukuran kecil */
+        padding: 10px 15px; /* Mengubah padding judul untuk layar berukuran kecil */
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 480px */
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 5px;
+    }
+
+    .banner h2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .service {
+        padding-bottom: 100px;
+    }
+
+    .box .col-4 {
+        width: 50%;
+    }
+
+    .box .col-4 h4 {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .box .col-4 img {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    footer .container {
+        margin-left: 0;
+    }
+
+    .banner h2 {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .banner {
+        height: 60vh; /* Mengubah tinggi banner untuk responsivitas */
+    }
+}
